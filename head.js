@@ -10,8 +10,12 @@ const assertEqual = function(actual, expected) {
   }
 };
 
-assertEqual("Lighthouse Labs", "Bootcamp");
-assertEqual(1, 1);
-assertEqual("Bootcamp", "Bootcamp");
-assertEqual(1, 5);
-assertEqual(1, "bootcamp");
+
+function head(arr) {
+  
+  return arr[0]
+  }
+
+
+  assertEqual(head([6]), 5);
+  assertEqual(head([]), "Hello");
