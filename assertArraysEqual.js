@@ -18,16 +18,19 @@ const eqArrays = function (arr1, arr2){
   for ( i = 0; i<arr1.length; i++){
     if (arr1[i] !== arr2[i]){
       return false
-    } else if (arr1[i] === arr2[i]){
-      return true
-    } else {
-      return false
     }
+  }
+  return true
+}
+
+const assertArraysEqual = function (arr1, arr2) {
+  if (eqArrays(arr1, arr2)){
+    console.log("Assertation Passed")
+  } else {
+    console.log("Assertation Failed")
   }
 }
 
-assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true); // => should PASS
+assertArraysEqual([1, 2, 3], [1, 2, 3]);
 
-
-
-
+assertArraysEqual([1, 2, 3], [1, 5, 3]);
