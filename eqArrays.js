@@ -24,15 +24,6 @@ const eqArrays = function (arr1, arr2){
       return false
     }
   }
-
-
-
-  if (arr1 === arr2){
-    return true
-  } else {
-    return false
-  }
-
 }
 
 assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true); // => should PASS
