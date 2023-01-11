@@ -6,7 +6,7 @@ const assertEqual = function(actual, expected) {
   if (actual === expected) {
     console.log(`${emojiFire} Assertion Passed: ${actual} === ${expected}`);
   } else {
-    console.log(`${emojiAngryFace} Assertion Failed: ${actual} === ${expected}`);
+    console.log(`${emojiAngryFace} Assertion Failed: ${actual} !== ${expected}`);
   }
 };
 
@@ -39,13 +39,13 @@ const flatten = function(array) {
     if (Array.isArray(array[i])) {
       for (let x = 0; x < array[i].length; x++) {
         newArray.push(array[i][x]);
-        // console.log(newArray);
+      
       }
-      // console.log(newArray);
+      
     } else {
       newArray.push(array[i]);
     }
-    // console.log(newArray);
+
   }
   return newArray;
 }
