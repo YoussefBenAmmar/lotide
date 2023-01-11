@@ -13,6 +13,7 @@ const assertEqual = function(actual, expected) {
 const countLetters = function (str){
   const result = {};
 
+
   const newStr = str.toLowerCase().split(" ").join("");
 
   for (let letter of newStr) {
@@ -31,4 +32,4 @@ const countLetters = function (str){
 
 const result = countLetters("lighthouse in the house") 
 
-assertEqual(result["Jason"], 1);
+assertEqual(countLetters("hello").h, 1);
