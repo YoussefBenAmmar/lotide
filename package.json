@@ -1,5 +1,5 @@
 {
-  "name": "@yousseba/lotide",
+  "name": "@youssefba/lotide",
   "version": "1.0.0",
   "description": "This our simplified version of the Lodash Library. Lotide, it contains 17 functions.",
   "main": "assertArraysEqual.js",
