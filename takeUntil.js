@@ -1,7 +1,7 @@
 const emojiAngryFace = String.fromCodePoint(0x1F621);
 const emojiFire = String.fromCodePoint(0x1F525);
 
-const assertEqual = function(actual, expected) {
+const assertEqual = function (actual, expected) {
 
   if (actual === expected) {
     console.log(`${emojiFire} Assertion Passed: ${actual} === ${expected}`);
@@ -10,13 +10,13 @@ const assertEqual = function(actual, expected) {
   }
 };
 
-const eqArrays = function (arr1, arr2){
+const eqArrays = function (arr1, arr2) {
 
-  if (arr1.length !== arr2.length){
+  if (arr1.length !== arr2.length) {
     return false;
   }
-  for ( i = 0; i<arr1.length; i++){
-    if (arr1[i] !== arr2[i]){
+  for (i = 0; i < arr1.length; i++) {
+    if (arr1[i] !== arr2[i]) {
       return false
     }
   }
@@ -24,7 +24,7 @@ const eqArrays = function (arr1, arr2){
 }
 
 const assertArraysEqual = function (arr1, arr2) {
-  if (eqArrays(arr1, arr2)){
+  if (eqArrays(arr1, arr2)) {
     console.log("Assertation Passed")
   } else {
     console.log("Assertation Failed")
@@ -34,8 +34,13 @@ const assertArraysEqual = function (arr1, arr2) {
 const takeUntil = function (array, callback) {
   let result = [];
 
-  //array.forEach((item, index) => {
-for (item of array){
+  // for (let item in array){
+   // if (callback(item)) {
+     // array = array.slice(0, array.indexOf(item));
+    //}
+  //})
+  //return array
+  for (item of array) {
     if (callback(item)) {
       //result.slice(index)
       return result

@@ -1,3 +1,4 @@
+const assertEqual = require('./assertEqual')
 
 function head(arr) {
   
@@ -5,5 +6,4 @@ function head(arr) {
   }
 
 
-  assertEqual(head([6]), 5);
-  assertEqual(head([]), "Hello");
+module.exports = head;
