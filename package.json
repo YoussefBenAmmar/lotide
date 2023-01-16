@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@yousseba/lotide",
   "version": "1.0.0",
-  "description": "",
+  "description": "This our simplified version of the Lodash Library. Lotide, it contains 17 functions.",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "test"
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/YoussefBenAmmar/lotide.git"
   },
-  "author": "",
+  "author": "Youssef Ben Ammar <benammar.y@gmail.com>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/YoussefBenAmmar/lotide/issues"
