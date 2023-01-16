@@ -64,3 +64,4 @@ assertArraysEqual(results3, ["gd", "cl", "to", "mr", "tm"]);
 
 
 
+module.exports = map;

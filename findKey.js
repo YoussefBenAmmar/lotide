@@ -31,3 +31,4 @@ const result1 = findKey({
 }, x => x.stars === 2) 
 
 //assertEqual(result1, "Bootcamp");
+module.exports = findKey;
